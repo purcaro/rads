@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab } from 'semantic-ui-react';
+import { Tab, Image } from 'semantic-ui-react';
 
 import Intro from './intro';
 import OA from './oa';
@@ -11,6 +11,8 @@ import Hemochromatosis  from './hemochromatosis';
 import MRH from './mrh';
 import Sarcoid from './sarcoid';
 import Scleroderma from './scleroderma';
+import Silastic  from './silastic';
+import Summary from './summary';
 
 import './app.css';
 
@@ -26,16 +28,19 @@ function App() {
 	{ menuItem: 'Multicentric reticulohistiocytosis', render: () => <MRH /> },
 	{ menuItem: 'Sarcoidosis', render: () => <Sarcoid /> },
 	{ menuItem: 'Scleroderma', render: () => <Scleroderma /> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'Silastic', render: () => <Silastic /> },
+	{ menuItem: 'Summary', render: () => <Summary /> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
     ]
 
     return (
-	<Tab menu={{ fluid: true,
-		     vertical: true,
-		     tabular: true }} panes={panes} />
+	<React.Fragment>
+	    <Image src="orig/TitleTitle.gif" />
+	    <br />
+	    <Tab menu={{ fluid: true,
+			 vertical: true,
+			 tabular: true }} panes={panes} />
+	</React.Fragment>
 	
     );
 }
