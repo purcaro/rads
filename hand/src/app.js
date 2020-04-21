@@ -4,6 +4,7 @@ import { Tab } from 'semantic-ui-react';
 import Intro from './intro';
 import OA from './oa';
 import Rheumatoid from './rheumatoid';
+import Psoriasis from './psoriasis';
 
 import './app.css';
 
@@ -12,7 +13,7 @@ function App() {
 	{ menuItem: 'Introduction', render: () => <Intro /> },
 	{ menuItem: 'Osteoarthritis', render: () => <OA /> },
 	{ menuItem: 'Rheumatoid', render: () => <Rheumatoid /> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'Psoriasis', render: () => <Psoriasis /> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
