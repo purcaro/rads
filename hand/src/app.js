@@ -9,6 +9,7 @@ import Gout from './gout';
 import CPPD from './cppd';
 import Hemochromatosis  from './hemochromatosis';
 import MRH from './mrh';
+import Sarcoid from './sarcoid';
 
 import './app.css';
 
@@ -22,6 +23,10 @@ function App() {
 	{ menuItem: 'CPPD', render: () => <CPPD /> },
 	{ menuItem: 'Hemochromatosis', render: () => <Hemochromatosis /> },
 	{ menuItem: 'Multicentric reticulohistiocytosis', render: () => <MRH /> },
+	{ menuItem: 'Sarcoidosis', render: () => <Sarcoid /> },
+	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
     ]
