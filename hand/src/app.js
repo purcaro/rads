@@ -7,6 +7,7 @@ import Rheumatoid from './rheumatoid';
 import Psoriasis from './psoriasis';
 import Gout from './gout';
 import CPPD from './cppd';
+import Hemochromatosis  from './hemochromatosis';
 
 import './app.css';
 
@@ -18,7 +19,7 @@ function App() {
 	{ menuItem: 'Psoriasis', render: () => <Psoriasis /> },
 	{ menuItem: 'Gout', render: () => <Gout /> },
 	{ menuItem: 'CPPD', render: () => <CPPD /> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'Hemochromatosis', render: () => <Hemochromatosis /> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
 	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
