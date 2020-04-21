@@ -13,6 +13,7 @@ import Sarcoid from './sarcoid';
 import Scleroderma from './scleroderma';
 import Silastic  from './silastic';
 import Summary from './summary';
+import References from './refs';
 
 import './app.css';
 
@@ -30,7 +31,7 @@ function App() {
 	{ menuItem: 'Scleroderma', render: () => <Scleroderma /> },
 	{ menuItem: 'Silastic', render: () => <Silastic /> },
 	{ menuItem: 'Summary', render: () => <Summary /> },
-	{ menuItem: 'Tab 3', render: () => <Tab.Pane>Tab 3 Content</Tab.Pane> },
+	{ menuItem: 'References', render: () => <References /> },
     ]
 
     return (
